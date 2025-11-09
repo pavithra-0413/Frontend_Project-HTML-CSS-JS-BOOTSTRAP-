@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExpress | Order Delicious Food Online</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">FoodExpress</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#restaurants">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offers">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="cart-icon" id="cartIcon">
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <span class="cart-count">0</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Order Your Favourite Food in Minutes!</h1>
+                <p>Discover the best restaurants and food near you</p>
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for restaurants or food...">
+                        <button class="btn" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>North Indian</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <h4>South Indian</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                        <h4>Fast Food</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                        <h4>Desserts</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h4>Beverages</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                        <h4>Italian</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Restaurants Section -->
+    <section class="restaurant-section" id="restaurants">
+        <div class="container">
+            <h2 class="section-title">Popular Restaurants</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="restaurant-img" alt="Restaurant">
+                        <div class="restaurant-info">
+                            <h4 class="restaurant-name">Spice Garden</h4>
+                            <p class="restaurant-cuisine">North Indian, Chinese, Mughlai</p>
+                            <div class="restaurant-details">
+                                <span class="rating">4.2 ★</span>
+                                <span class="delivery-time">30-40 mins</span>
+                            </div>
+                            <button class="view-menu-btn">View Menu</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="restaurant-img" alt="Restaurant">
+                        <div class="restaurant-info">
+                            <h4 class="restaurant-name">Burger Hub</h4>
+                            <p class="restaurant-cuisine">Burgers, Fast Food, American</p>
+                            <div class="restaurant-details">
+                                <span class="rating">4.5 ★</span>
+                                <span class="delivery-time">20-30 mins</span>
+                            </div>
+                            <button class="view-menu-btn">View Menu</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="restaurant-card">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="restaurant-img" alt="Restaurant">
+                        <div class="restaurant-info">
+                            <h4 class="restaurant-name">Pizza Palace</h4>
+                            <p class="restaurant-cuisine">Pizza, Italian, Pasta</p>
+                            <div class="restaurant-details">
+                                <span class="rating">4.3 ★</span>
+                                <span class="delivery-time">25-35 mins</span>
+                            </div>
+                            <button class="view-menu-btn">View Menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section class="food-menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Popular Dishes</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80" class="food-img" alt="Butter Chicken">
+                        <div class="food-info">
+                            <h4 class="food-name">Butter Chicken</h4>
+                            <p class="food-description">Tender chicken in a rich, creamy tomato sauce</p>
+                            <div class="food-price">₹350</div>
+                            <button class="add-to-cart-btn" data-id="1" data-name="Butter Chicken" data-price="350">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="food-img" alt="Paneer Tikka">
+                        <div class="food-info">
+                            <h4 class="food-name">Paneer Tikka</h4>
+                            <p class="food-description">Grilled cottage cheese with spices and herbs</p>
+                            <div class="food-price">₹280</div>
+                            <button class="add-to-cart-btn" data-id="2" data-name="Paneer Tikka" data-price="280">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" class="food-img" alt="Burger">
+                        <div class="food-info">
+                            <h4 class="food-name">Classic Burger</h4>
+                            <p class="food-description">Juicy beef patty with fresh vegetables and cheese</p>
+                            <div class="food-price">₹180</div>
+                            <button class="add-to-cart-btn" data-id="3" data-name="Classic Burger" data-price="180">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="food-card">
+                        <img src="image/pizza.png" class="food-img" alt="Pizza">
+                        <div class="food-info">
+                            <h4 class="food-name">Margherita Pizza</h4>
+                            <p class="food-description">Classic pizza with tomato sauce and mozzarella</p>
+                            <div class="food-price">₹320</div>
+                            <button class="add-to-cart-btn" data-id="4" data-name="Margherita Pizza" data-price="320">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1559715745-e1b33a271c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="food-img" alt="Dosa">
+                        <div class="food-info">
+                            <h4 class="food-name">Masala Dosa</h4>
+                            <p class="food-description">Crispy rice crepe filled with spiced potatoes</p>
+                            <div class="food-price">₹120</div>
+                            <button class="add-to-cart-btn" data-id="5" data-name="Masala Dosa" data-price="120">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="food-card">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80" class="food-img" alt="Ice Cream">
+                        <div class="food-info">
+                            <h4 class="food-name">Chocolate Ice Cream</h4>
+                            <p class="food-description">Rich and creamy chocolate ice cream</p>
+                            <div class="food-price">₹90</div>
+                            <button class="add-to-cart-btn" data-id="6" data-name="Chocolate Ice Cream" data-price="90">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3 class="cart-title">Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Page -->
+    <section class="checkout-section" id="checkoutPage" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="checkout-card">
+                        <h2 class="section-title mb-4">Checkout</h2>
+                        <form id="checkoutForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile" class="form-label">Mobile Number</label>
+                                <input type="tel" class="form-control" id="mobile" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Delivery Address</label>
+                                <textarea class="form-control" id="address" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="instructions" class="form-label">Delivery Instructions (Optional)</label>
+                                <textarea class="form-control" id="instructions" rows="2"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="checkout-card">
+                        <h4 class="mb-4">Order Summary</h4>
+                        <div class="order-summary">
+                            <div id="orderItems">
+                                <!-- Order items will be added here dynamically -->
+                            </div>
+                            <div class="order-total">
+                                <span>Total:</span>
+                                <span id="orderTotal">₹0</span>
+                            </div>
+                        </div>
+                        <button class="place-order-btn" id="placeOrderBtn">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>FoodExpress</h5>
+                    <p>Order your favorite food from the best restaurants in town. Fast delivery, great prices, and delicious meals.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#restaurants">Restaurants</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Categories</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">North Indian</a></li>
+                        <li><a href="#">South Indian</a></li>
+                        <li><a href="#">Fast Food</a></li>
+                        <li><a href="#">Desserts</a></li>
+                        <li><a href="#">Beverages</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Food Street, City</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@foodexpress.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 FoodExpress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
